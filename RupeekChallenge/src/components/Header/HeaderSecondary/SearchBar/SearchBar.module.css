@@ -1,0 +1,38 @@
+.SearchBar{
+    flex-basis: 18rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 5px;
+    margin: .5rem;
+    display: flex;
+}
+
+.SearchBarInput{
+    flex-basis: 90%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.SearchBarIcon{
+    flex-basis: 10%;
+    font-size: 1rem;
+    color: rgb(43,62,80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px){ 
+    .SearchBar{
+        width: 95%;
+        flex-basis: auto;
+        height: 2.5rem;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        order: 1;
+    }
+}

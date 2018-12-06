@@ -1,0 +1,54 @@
+.SortBy{
+    flex-basis: 20rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 5px;
+    margin: .5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.SortByInput{
+    height: 100%;
+    background-color: transparent;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    flex-basis: 80%;
+}
+
+.SortByText{
+    flex-basis: 100px;
+    font-size: 1rem;
+    color: rgb(43,62,80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .2rem;
+}
+
+.SortByOption{
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.SortByOption:focus,.SortByOption:hover,.SortByOption::selection{
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px){ 
+    .SortBy{
+        width: 95%;
+        flex-basis: auto;
+        height: 2.5rem;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        order: 2;
+    }
+    }
