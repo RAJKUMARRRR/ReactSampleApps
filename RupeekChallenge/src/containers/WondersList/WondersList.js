@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import WonderCard from "../../components/WonderCard/WonderCard";
 import classes from "./WondersList.module.css";
-import axios from '../../wonders-client';
 
+import * as actions from '../../store/actions';
+import {connect} from 'react-redux';
 class WondersList extends Component {
 
   render() {
@@ -23,4 +24,11 @@ class WondersList extends Component {
   }
 }
 
-export default WondersList;
+
+const mapStateToProps = state=>{
+  return {
+    wondersList: state.filterList
+  }
+}
+
+export default connect(mapStateToProps)(WondersList);

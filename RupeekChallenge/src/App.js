@@ -5,9 +5,11 @@ import Header from "./components/Header/Header";
 import WondersList from "./containers/WondersList/WondersList";
 import axios from './wonders-client';
 
+import * as actions from './store/actions';
+import {connect} from 'react-redux';
 class App extends Component {
 
-  state = {
+  /*state = {
     wondersList: [],
     filterList: [],
     totalLikes: 0
@@ -77,15 +79,33 @@ class App extends Component {
       filterList: wonders
     }));
   }
+  */
 
+  componentDidMount(){
+    this.props.fetchWonders();
+  }
   render() {
     return (
       <React.Fragment>
-        <Header onSearchTextChange={this.onSearch} likes={this.state.totalLikes} onFilterOptionSelected={this.onSortBy}/>
-        <WondersList wondersList={this.state.filterList}/>
+        <Header onSearchTextChange={this.props.onSearch} likes={this.props.totalLikes} onFilterOptionSelected={this.props.onSortBy}/>
+        <WondersList/>
       </React.Fragment>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state=>{
+  return {
+    totalLikes: state.totalLikes
+  }
+}
+
+const mapDispatchToProps = dispatch=>{
+  return {
+    fetchWonders: ()=>dispatch(actions.fetchWondersList()),
+    onSearch: (text)=>dispatch(actions.applySearch(text)),
+    onSortBy: (filterKey)=>dispatch(actions.applyFilter(filterKey))
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);
