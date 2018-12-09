@@ -1,0 +1,13 @@
+.CommentsList{
+    border-top: 1px solid #eee;
+    padding: 2rem 0;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .CommentsList{
+        margin-bottom: none;
+        order: 6;
+    }
+}
+  

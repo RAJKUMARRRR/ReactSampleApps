@@ -1,0 +1,16 @@
+.StatisticItem{
+    display: flex;
+    padding: 1rem;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.Value{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 0.7rem;
+}
+
+.Title{
+    font-size: 1.8rem;
+}

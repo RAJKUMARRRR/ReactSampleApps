@@ -1,0 +1,8 @@
+.UserAction{
+    padding: 1rem 1rem .5rem 0;
+    justify-content: flex-start;
+}
+
+.UserAction i{
+    font-size: 2rem;
+}

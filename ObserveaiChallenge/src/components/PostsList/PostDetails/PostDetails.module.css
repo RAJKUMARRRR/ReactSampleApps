@@ -1,0 +1,105 @@
+.PostDetails {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+}
+
+.PostDetailsMain {
+  background-color: white;
+  flex-basis: 75%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.ImagePostBox {
+  flex-basis: 60%;
+}
+.ImagePost {
+  width: 100%;
+  height: 100%;
+}
+.PostDetailsContent {
+  flex-basis: 40%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Likes {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-right: 0.5rem;
+  text-align: left;
+}
+
+.Date {
+  color: #ccc;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.Close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2rem;
+  color: white;
+  margin: 2rem 2rem 0 0;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .PostsList {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .PostDetails {
+    background-color: white;
+  }
+  .PostDetailsMain {
+    background-color: white;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ImagePostBox {
+    flex-basis: 40%;
+  }
+    .PostDetailsContent {
+    flex-basis: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .Likes {
+      order: 3;
+  }
+  
+  .Date {
+    order: 4;
+}
+
+.CloseMini {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+    color: black;
+    z-index: 1000;
+    cursor: pointer;
+    margin: 1rem;
+  }
+  
+  }

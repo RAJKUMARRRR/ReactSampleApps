@@ -1,0 +1,45 @@
+.ProfileInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.Row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Username{
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--grey-medium);
+}
+
+.Name{
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.UsernameSmall{
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 700px) { 
+    .ProfileInfo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+        .Row{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 80px;
+    }
+}
+  
+

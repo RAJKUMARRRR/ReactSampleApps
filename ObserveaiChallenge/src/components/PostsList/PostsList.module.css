@@ -1,0 +1,27 @@
+.Wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+.PostsList{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 3rem;
+}
+
+
+@media screen and (max-width: 1000px) { 
+    .PostsList{
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+    .PostsList{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}

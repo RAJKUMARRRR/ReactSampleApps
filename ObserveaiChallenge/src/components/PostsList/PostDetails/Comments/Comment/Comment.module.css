@@ -1,0 +1,18 @@
+.Comment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.User{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-right: .5rem;
+}
+
+.CommentText{
+    font-size: 1.2rem;
+}
+
+.Icon{
+    font-size: 1.2rem;
+}

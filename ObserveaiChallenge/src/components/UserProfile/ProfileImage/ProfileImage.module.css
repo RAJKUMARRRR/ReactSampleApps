@@ -1,0 +1,26 @@
+.ProfileImage{
+    height: 100%;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.Image{
+    display: block;
+    border-radius: 400px;   
+    border: 1px solid var(--grey-light);
+}
+.ProfileImageSmall{
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    border-radius: 400px;   
+    border: 1px solid var(--grey-light);
+}
+.ProfileImageMedium{
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    border-radius: 400px;   
+    border: 1px solid var(--grey-light);
+}

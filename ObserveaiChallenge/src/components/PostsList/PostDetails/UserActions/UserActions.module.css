@@ -1,0 +1,11 @@
+.UserActions{
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+    .UserActions{
+        order: 2;
+    }
+}
